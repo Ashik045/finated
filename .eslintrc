@@ -1,16 +1,15 @@
 {
   "extends": [
-    "next/core-web-vitals",
     "airbnb",
     "airbnb/hooks",
     "eslint:recommended",
     "prettier",
     "plugin:jsx-a11y/recommended"
   ],
-  "parser": "@babel/eslint-parser",
+  "parser": " @babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 8,
-    "requireConfigfile": false
+    "requireConfigFile": false
   },
   "env": {
     "browser": true,

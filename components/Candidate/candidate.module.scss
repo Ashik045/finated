@@ -1,0 +1,32 @@
+.candidate {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  .candidate_main {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-gap: 25px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .candidate {
+    .candidate_main {
+      display: grid;
+      grid-template-columns: 45% 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .candidate {
+    .candidate_main {
+      display: grid;
+      grid-template-columns: 90%;
+    }
+  }
+}
