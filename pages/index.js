@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Articles from '../components/Articles/Articles'
 import Candidate from '../components/Candidate/Candidate'
 import Category from '../components/Category/Category'
 import Download from '../components/Download/Download'
@@ -6,6 +7,7 @@ import Header from '../components/Header/Header'
 import HowWork from '../components/HowWork/HowWork'
 import Jobs from '../components/Jobs/Jobs'
 import Navbar from '../components/Navbar/Navbar'
+import Reviews from '../components/Reviews/Reviews'
 import img1 from '../images/1.webp'
 import img2 from '../images/2.webp'
 import img3 from '../images/3.webp'
@@ -15,6 +17,8 @@ import img6 from '../images/6.webp'
 import img7 from '../images/7.webp'
 import img8 from '../images/8.webp'
 import img9 from '../images/9.webp'
+import blog1 from '../images/blog1.jpg'
+import blog2 from '../images/blog2.jpg'
 import image1 from '../images/candidate1.jpg'
 import image2 from '../images/candidate2.jpg'
 import image3 from '../images/candidate3.jpg'
@@ -146,6 +150,42 @@ const candidateDetail = [
   },
 ]
 
+const articleDetail = [
+    {
+        id: 1,
+        image: blog1,
+        author: 'Aguilera Snea',
+        title: 'Established fact and readeren will distracted the readable content.',
+        createdAt: '2 June, 2021',
+    },
+    {
+        id: 2,
+        image: blog2,
+        author: 'Devid Hyou',
+        title: 'It long established fact that reader will distracted the readable.',
+        createdAt: '22 Jan, 2020',
+    },
+]
+  
+const articleDetai2 = [
+    {
+        id: 1,
+        image: blog1,
+        author: 'Henri Doe',
+        title: 'With WooLentor is drag-and drop interface for creating.',
+        createdAt: '20 June, 2017',
+        hr: true,
+    },
+    {
+        id: 2,
+        image: blog2,
+        author: 'Julia Dev',
+        title: 'It long established fact that reader will distracted the readable.',
+        createdAt: '04 Jan, 2022',
+        hr: false,
+    },
+]
+
 
 export default function Home() {
   return (
@@ -164,6 +204,8 @@ export default function Home() {
        <HowWork />
        <Download />
        <Candidate candidateDetail={candidateDetail} />
+       <Reviews />
+       <Articles articleDetail={articleDetail} articleDetai2={articleDetai2} />
       </main>
     </div>
   )

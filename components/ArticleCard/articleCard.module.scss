@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.article_cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  .article_card {
+    .article_card_img {
+      object-fit: cover;
+      border-radius: 4px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-family: "Ubuntu", sans-serif;
+      letter-spacing: 1px;
+      color: rgb(41, 40, 40);
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    h2:hover {
+      color: #03a84e;
+    }
+
+    .article_card_bottom {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      color: rgb(100, 98, 98);
+      margin-top: -10px;
+    }
+  }
+
+  .article_card:hover {
+    .article_card_img {
+      transform: scale(1.04);
+      color: rgb(230, 227, 227);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .article_cards {
+    display: grid;
+    grid-template-columns: 48% 48%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .article_cards {
+    display: grid;
+    grid-template-columns: 95%;
+
+    .article_card_bottom {
+      margin-top: -15px;
+    }
+  }
+}
