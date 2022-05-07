@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import { FaCheck, FaMapMarkerAlt } from 'react-icons/fa'
 import Footer from '../../components/Footer/Footer'
@@ -50,22 +51,22 @@ const jobDetail = () => {
             <div className={style.detail_bottom_left}>
                 <h2>About the job</h2>
                 {jobItem.description.map((des, index) => {
-                    return <p key={index}>{des}</p>
+                    return <p key={index} className={style.bottom_left_desc}>{des}</p>
                 })}
 
                 <h2>Qualifications</h2>
                 {jobItem.qualifications.map((e, indes) => {
-                    return <p key={indes}><FaCheck /> {e}</p>
+                    return <p key={indes}><FaCheck className={style.right_icon} /> {e}</p>
                 })}
 
                 <h2>Responsibilities</h2>
                 {jobItem.responsibilities.map((ee, indes) => {
-                    return <p key={indes}><FaCheck /> {ee}</p>
+                    return <p key={indes}><FaCheck className={style.right_icon}/> {ee}</p>
                 })}
 
                 <h2>Work Hour</h2>
                 {jobItem.workHour.map((w, indes) => {
-                    return <p key={indes}><FaCheck /> {w}</p>
+                    return <p key={indes}><FaCheck className={style.right_icon}/> {w}</p>
                 })}
 
                 <h2>Statement</h2>
@@ -73,7 +74,80 @@ const jobDetail = () => {
             </div>
 
             <div className={style.detail_bottom_right}>
-                <h1>Summary</h1>
+                <div className={style.bottom_right_summery}>
+                    <h2>Summary</h2>
+                    <div className={style.right_summery_btm}></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Job Type</td>
+                                <td>:</td>
+                                <td>Full-time</td>
+                            </tr>
+                            <tr>
+                                <td>Posted</td>
+                                <td>:</td>
+                                <td>25 July, 2020</td>
+                            </tr>
+                            <tr>
+                                <td>Salary</td>
+                                <td>:</td>
+                                <td>$5000 / Month</td>
+                            </tr>
+                            <tr>
+                                <td>Experience</td>
+                                <td>:</td>
+                                <td>1-3 Years</td>
+                            </tr>
+                            <tr>
+                                <td>Qualification</td>
+                                <td>:</td>
+                                <td>MSC, BSC</td>
+                            </tr>
+                            <tr>
+                                <td>Applied</td>
+                                <td>:</td>
+                                <td>17 Applicant</td>
+                            </tr>
+                            <tr>
+                                <td>Category</td>
+                                <td>:</td>
+                                <td>Development</td>
+                            </tr>
+                            <tr>
+                                <td>Application End</td>
+                                <td>:</td>
+                                <td>30 December, 2020</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className={style.bottom_right_tags}>
+                    <h2>Tags</h2>
+                    <div className={style.right_tags_btm}></div>
+                    <div className={style.right_tags_btns}>
+                        <Link href="/jobs">
+                            <button>Development</button>
+                        </Link>
+                        <Link href="/jobs">
+                            <button>Designing</button>
+                        </Link>
+                        <Link href="/jobs">
+                            <button>Technology</button>
+                        </Link>
+                        <Link href="/jobs">
+                            <button>Buisness</button>
+                        </Link>
+                        <Link href="/jobs">
+                            <button>Developer</button>
+                        </Link>
+                        <Link href="/jobs">
+                            <button>Technology</button>
+                        </Link>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
