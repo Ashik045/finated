@@ -1,0 +1,39 @@
+.page_header {
+  margin-top: -120px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  .page_header_img {
+    background-image: url("../../images/header3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(40%);
+    height: 100%;
+    width: 100%;
+  }
+
+  .page_header_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      color: white;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+    h4 {
+      text-transform: capitalize;
+
+      color: #03a84e;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page_header {
+    height: 450px;
+  }
+}

@@ -1,0 +1,42 @@
+.pagination {
+  height: 80px;
+  width: 100%;
+  .pagination_main {
+    text-align: center;
+    margin-top: 70px;
+
+    a {
+      padding: 15px 20px;
+      background-color: #f4f7f7;
+      font-weight: bold;
+      margin: 0px 5px;
+      border-radius: 3px;
+      font-size: 19px;
+      transition: all 0.4s ease;
+    }
+
+    a:hover:not(.active) {
+      background-color: #03a84e;
+      color: white;
+    }
+
+    .active {
+      background-color: #03a84e;
+      color: white;
+    }
+  }
+}
+
+@media screen and(max-width: 576px) {
+  .pagination {
+    height: 50px;
+    .pagination_main {
+      margin-top: 60px;
+
+      a {
+        padding: 10px 15px;
+        margin: 0px 3px;
+      }
+    }
+  }
+}

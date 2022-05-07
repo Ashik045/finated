@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import style from './JobsCard.module.scss';
 
@@ -13,7 +14,9 @@ const JobsCard = ({jobDetail}) => {
             </div>
         </div>
         
-        <h2>{jobDetail.title}</h2>
+        <Link href={`jobs/${jobDetail.id}`}>
+            <h2>{jobDetail.title}</h2>
+        </Link>
         <p style={{
             color: jobDetail.type === 'Remote' ? 'rgb(3, 196, 3)' : 'blue'
         }}>{jobDetail.type}</p>
@@ -24,7 +27,9 @@ const JobsCard = ({jobDetail}) => {
         <div className={style.job_card_footer}>
             <p><span className={style.job_card_footer_tk}>${jobDetail.sallery}</span>/month</p>
             
-            <button type='button'>Apply Now</button>
+            <Link href={`jobs/${jobDetail.id}`}>
+                <button type='button'>Apply Now</button>
+            </Link>
         </div>
     </div>
   )

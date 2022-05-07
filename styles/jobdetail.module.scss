@@ -1,0 +1,124 @@
+.job_detail {
+  .job_detail_main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .job_detail_top {
+      background-color: #f4f7f7;
+      border-radius: 4px;
+      padding: 40px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 70% 20%;
+      grid-gap: 25px;
+      justify-content: space-between;
+      align-items: center;
+
+      .job_detail_top_left {
+        display: flex;
+        // justify-content: space-between;
+        .job_left_img {
+          object-fit: cover;
+        }
+
+        .top_left_desc {
+          margin-left: 40px;
+          .top_left_desc_color {
+            color: #03a84e;
+            font-weight: bold;
+          }
+
+          p:last-child {
+            color: rgb(116, 114, 114);
+          }
+        }
+      }
+
+      .job_detail_top_right {
+        p {
+          color: rgb(116, 114, 114);
+
+          .job_detail_amount {
+            color: black;
+            font-weight: bold;
+            font-size: 21px;
+          }
+        }
+
+        button {
+          height: 40px;
+          width: 100px;
+          border: none;
+          background-color: #03a84e;
+          border-radius: 5px;
+          color: white;
+          letter-spacing: 1px;
+          transition: all 0.4s ease;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        button:hover {
+          background-color: white;
+          border: 1px solid #03a84e;
+          color: #03a84e;
+        }
+      }
+    }
+
+    .job_detail_bottom {
+      margin-top: 80px;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      display: grid;
+      grid-template-columns: 60% 37%;
+      grid-gap: 35px;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .job_detail {
+    .job_detail_main {
+      .job_detail_top {
+        padding: 20px;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 70% 25%;
+        grid-gap: 0px;
+        .job_detail_top_left {
+          .top_left_desc {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .job_detail {
+    .job_detail_main {
+      .job_detail_top {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        .job_detail_top_left {
+          display: grid;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
