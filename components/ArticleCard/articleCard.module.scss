@@ -2,7 +2,7 @@
 
 .article_cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   grid-gap: 30px;
   justify-content: center;
   align-items: center;
@@ -55,6 +55,7 @@
   .article_cards {
     display: grid;
     grid-template-columns: 95%;
+    justify-content: center;
 
     .article_card_bottom {
       margin-top: -15px;

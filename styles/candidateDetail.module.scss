@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.candidate_detail {
+  .candidate_detail_main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .candidate_detail_top {
+      background-color: #f4f7f7;
+      border-radius: 4px;
+      padding: 40px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: grid;
+      grid-template-columns: 70% 20%;
+      grid-gap: 25px;
+      justify-content: space-between;
+      align-items: center;
+
+      .candidate_detail_top_left {
+        display: flex;
+        // justify-content: center;
+        .job_left_img {
+          object-fit: cover;
+          border-radius: 4px;
+        }
+
+        .top_left_desc {
+          margin-left: 40px;
+          .top_left_desc_color {
+            color: #03a84e;
+            font-weight: bold;
+          }
+
+          p:last-child {
+            color: rgb(116, 114, 114);
+            font-size: 15px;
+          }
+        }
+      }
+
+      .candidate_detail_top_right {
+        text-align: center;
+        button {
+          padding: 15px 10px;
+          border: none;
+          background-color: #03a84e;
+          border-radius: 5px;
+          color: white;
+          letter-spacing: 1px;
+          transition: all 0.4s ease;
+          cursor: pointer;
+          margin-top: 10px;
+          font-weight: bold;
+        }
+
+        button:hover {
+          background-color: white;
+          border: 1px solid #03a84e;
+          color: #03a84e;
+        }
+      }
+    }
+
+    .candidate_detail_bottom {
+      margin-top: 80px;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+      display: grid;
+      grid-template-columns: 60% 37%;
+      grid-gap: 35px;
+      justify-content: center;
+
+      .detail_bottom_left {
+        p {
+          line-height: 20px;
+          color: rgb(85, 84, 84);
+          font-family: "Roboto", sans-serif;
+          font-weight: 500;
+
+          .right_icon {
+            font-size: 12px;
+            margin-right: 5px;
+          }
+        }
+        .bottom_left_desc {
+          line-height: 30px;
+        }
+
+        h2 {
+          margin-top: 45px;
+          font-weight: bold;
+        }
+
+        .experience_div {
+          margin-left: 40px;
+          transition: all 0.4s ease;
+          padding: 5px 15px;
+          border-left: 4px solid white;
+
+          .experience_div_title {
+            display: flex;
+            align-items: center;
+            h4 {
+              color: #03a84e;
+              margin-right: 10px;
+              font-weight: bold;
+            }
+
+            .experience_div_year {
+              font-size: 15px;
+            }
+          }
+
+          h5 {
+            margin-top: -10px;
+            letter-spacing: 1px;
+            color: rgb(19, 18, 18);
+          }
+        }
+
+        .experience_div:hover {
+          border-left: 4px solid #03a84e;
+        }
+      }
+
+      .detail_bottom_right {
+        margin-top: 30px;
+        .bottom_right_summery {
+          background-color: #f4f7f7;
+          padding: 35px;
+          border-radius: 4px;
+
+          h2 {
+            font-weight: bold;
+          }
+
+          .right_summery_btm {
+            width: 60px;
+            height: 4px;
+            background-color: #03a84e;
+            z-index: 10;
+            margin-bottom: 20px;
+          }
+
+          table {
+            display: table;
+            border-collapse: collapse;
+            width: 100%;
+            color: rgb(68, 67, 67);
+
+            tbody {
+              tr {
+                line-height: 40px;
+                td {
+                  text-align: left;
+                  font-weight: 400;
+                }
+                td:first-child {
+                  font-weight: bold;
+                  color: rgb(53, 52, 52);
+                }
+              }
+            }
+          }
+        }
+
+        .bottom_right_tags {
+          background-color: #f4f7f7;
+          padding: 35px;
+          border-radius: 4px;
+          margin-top: 60px;
+
+          h2 {
+            font-weight: bold;
+          }
+
+          .right_tags_btm {
+            width: 60px;
+            height: 4px;
+            background-color: #03a84e;
+            z-index: 10;
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .candidate_detail {
+    .candidate_detail_main {
+      .candidate_detail_bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .candidate_detail {
+    .candidate_detail_main {
+      .candidate_detail_top {
+        padding: 20px;
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: 70% 25%;
+        grid-gap: 0px;
+        .candidate_detail_top_left {
+          .top_left_desc {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .candidate_detail {
+    .candidate_detail_main {
+      .candidate_detail_top {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 90%;
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        .candidate_detail_top_left {
+          display: grid;
+          justify-content: center;
+
+          .top_left_desc {
+            .top_left_desc_block {
+              display: block;
+              margin-left: -8px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+
+      .candidate_detail_bottom {
+        margin-top: 5px;
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .detail_bottom_left {
+          .experience_div {
+            margin-left: 10px;
+            padding: 5px 15px;
+
+            .experience_div_title {
+              h4 {
+                margin-right: 5px;
+              }
+
+              .experience_div_year {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+
+        .detail_bottom_right {
+          margin-top: 10px;
+          .bottom_right_summery {
+            padding: 15px;
+
+            table {
+              tbody {
+                tr {
+                  line-height: 35px;
+                }
+              }
+            }
+          }
+
+          .bottom_right_tags {
+            padding: 15px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

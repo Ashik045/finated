@@ -1,0 +1,136 @@
+$headingColor: rgb(51, 50, 50);
+
+@mixin heading {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: $headingColor;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.articledetail_page {
+  .articledetail_page_main {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .articledetail_page_main_top {
+      text-align: center;
+
+      p {
+        color: rgb(73, 72, 72);
+
+        .page_main_author {
+          font-weight: bold;
+          color: black;
+          font-size: 17px;
+          margin-right: 5px;
+        }
+
+        .dot {
+          margin: 0px 5px;
+          font-weight: 900;
+          color: black;
+        }
+      }
+
+      h1 {
+        @include heading();
+        font-size: 35px;
+        padding: 0px 50px;
+      }
+    }
+
+    .btnss {
+      display: grid;
+      grid-template-columns: 10% 10% 10% 10%;
+      grid-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 80px;
+
+      button {
+        padding: 10px;
+        border: none;
+        background-color: #f4f7f7;
+        border-radius: 4px;
+        color: rgb(24, 23, 23);
+        transition: all 0.4s ease;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      button:hover {
+        background-color: #03a84e;
+        color: white;
+      }
+    }
+
+    .page_main_img1 {
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h1 {
+      @include heading();
+      font-size: 30px;
+    }
+
+    p {
+      color: rgb(73, 72, 72);
+      line-height: 35px;
+      //   letter-spacing: 1px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .articledetail_page {
+    .articledetail_page_main {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .articledetail_page {
+    .articledetail_page_main {
+      .articledetail_page_main_top {
+        h1 {
+          @include heading();
+          font-size: 27px;
+          padding: 0px 10px;
+        }
+      }
+
+      .btnss {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        grid-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+
+        button {
+          padding: 5px;
+        }
+      }
+
+      h1 {
+        @include heading();
+        font-size: 23px;
+      }
+
+      p {
+        color: rgb(73, 72, 72);
+        line-height: 28px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

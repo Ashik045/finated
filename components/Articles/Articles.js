@@ -12,27 +12,29 @@ const Articles = ({articleDetail, articleDetai2}) => {
         <div className={style.articles_main}>
             <ArticleCard articleDetail={articleDetail} />
 
-            <div className={style.articles_main_right}>
-                {articleDetai2.map((detail) => {
-                    return (
-                        <>
-                        <div key={detail.id} className={style.articles_main_right_blog}>
-                            <h4><span style={{color: 'rgb(114, 112, 112)', marginRight: '5px'}}>By </span> {detail.author}</h4>
-                            <Link href="/articleDetail">
-                                <h2>{detail.title}</h2>
-                            </Link>
-                            
-                            <div className={style.article_card_bottom}>
-                                <p>{detail.createdAt}</p>
-                                <p>10 min read</p>
+            {articleDetai2 && (
+                <div className={style.articles_main_right}>
+                    {articleDetai2?.map((detail) => {
+                        return (
+                            <>
+                            <div key={detail.id} className={style.articles_main_right_blog}>
+                                <h4><span style={{color: 'rgb(114, 112, 112)', marginRight: '5px'}}>By </span> {detail.author}</h4>
+                                <Link href="/articleDetail">
+                                    <h2>{detail.title}</h2>
+                                </Link>
+                                
+                                <div className={style.article_card_bottom}>
+                                    <p>{detail.createdAt}</p>
+                                    <p>10 min read</p>
+                                </div>
                             </div>
-                        </div>
-                        {detail.hr && <hr style={{color: 'rgb(230, 227, 227)'}} />}
-                    
-                    </>
-                    )
-                })}
-            </div>
+                            {detail.hr && <hr style={{color: 'rgb(230, 227, 227)'}} />}
+                        
+                        </>
+                        )
+                    })}
+                </div>
+            )}
         </div>
     </div>
   )

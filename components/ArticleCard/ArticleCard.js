@@ -9,11 +9,11 @@ const ArticleCard = ({articleDetail}) => {
         {articleDetail.map((detail) => {
             return (
                 <div key={detail.id} className={style.article_card}>
-                <Link href="/articleDetail">
+                <Link href={`/article/${detail.id}`}>
                     <Image src={detail.image} alt="article" className={style.article_card_img} height={350} width={500}/>
                 </Link>
                     <h4><span style={{color: 'rgb(114, 112, 112)', marginRight: '5px'}}>By </span> {detail.author}</h4>
-                    <Link href="/articleDetail">
+                    <Link href={`/article/${detail.id}`}>
                         <h2>{detail.title}</h2>
                     </Link>
                     
