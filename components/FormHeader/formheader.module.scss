@@ -1,0 +1,21 @@
+.register_page_main_head {
+  text-align: center;
+  padding-top: 5px;
+  .contact_bottom_btm {
+    width: 60px;
+    height: 5px;
+    background-color: #03a84e;
+    z-index: 10;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    z-index: 2;
+  }
+
+  .contact_bottom_hr {
+    margin-top: -22px;
+    width: 60%;
+    z-index: -1;
+  }
+}

@@ -210,6 +210,7 @@ export default function Home() {
                 <Articles articleDetail={articleDetail} articleDetai2={articleDetai2} />
                 <Newsletter />
                 <Footer />
+                
             </main>
         </div>
     )

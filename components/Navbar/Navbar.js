@@ -53,9 +53,11 @@ const Navbar = () => {
 
       <div className={style.nav_registration}>
         {user ? (
-          <button type='button' className={style.nav_reg_btn}>Log Out</button>
+            <button type='button' className={style.nav_reg_btn}>Log Out</button>
         ) : (
-          <button type='button' className={style.nav_reg_btn}>Log In</button>
+          <Link href="/register">
+            <button type='button' className={style.nav_reg_btn}>Log In</button>
+          </Link>
         )}
       </div>
 
