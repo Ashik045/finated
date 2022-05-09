@@ -70,7 +70,7 @@ const login = () => {
                 icon: 'success',
                 title: 'Log In Succesfully.'
               })
-              router.push('/login')
+              router.push('/')
         } catch (error) {
             console.log(error);
             setErr(true)

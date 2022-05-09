@@ -77,7 +77,7 @@ const Navbar = () => {
               <Link href="/candidate">
                 <a href="" onClick={handleToggle}>Candidate</a>
               </Link>
-              <Link href="/blogs">
+              <Link href="/article">
                 <a href="" onClick={handleToggle}>Blog</a>
               </Link>
               <Link href="/contact">

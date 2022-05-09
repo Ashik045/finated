@@ -19,7 +19,7 @@ const Articles = ({articleDetail, articleDetai2}) => {
                             <div key={detail.id}>
                             <div  className={style.articles_main_right_blog}>
                                 <h4><span style={{color: 'rgb(114, 112, 112)', marginRight: '5px'}}>By </span> {detail.author}</h4>
-                                <Link href="/articleDetail">
+                                <Link href={`/article/${detail.id}`}>
                                     <h2>{detail.title}</h2>
                                 </Link>
                                 
