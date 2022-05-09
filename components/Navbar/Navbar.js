@@ -55,7 +55,7 @@ const Navbar = () => {
         {user ? (
             <button type='button' className={style.nav_reg_btn}>Log Out</button>
         ) : (
-          <Link href="/register">
+          <Link href="/login">
             <button type='button' className={style.nav_reg_btn}>Log In</button>
           </Link>
         )}

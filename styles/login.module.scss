@@ -1,5 +1,5 @@
-.register_page {
-  .register_page_main {
+.login_page {
+  .login_page_main {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -48,8 +48,8 @@
 }
 
 @media screen and(max-width: 767px) {
-  .register_page {
-    .register_page_main {
+  .login_page {
+    .login_page_main {
       width: 70%;
       margin-left: auto;
       margin-right: auto;
@@ -68,8 +68,8 @@
 }
 
 @media screen and(max-width: 576px) {
-  .register_page {
-    .register_page_main {
+  .login_page {
+    .login_page_main {
       width: 90%;
       margin-left: auto;
       margin-right: auto;

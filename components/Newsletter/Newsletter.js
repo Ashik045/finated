@@ -39,7 +39,7 @@ const Newsletter = () => {
 
                 <div className={style.right}>
                     <form action="" className={style.right_form} onSubmit={handleSubmit}>
-                        <input type="email" placeholder='Enter your email..' />
+                        <input type="email" placeholder='Enter your email..' required/>
                         <input type="submit" value="Subscribe"/>
                     </form>
                 </div>
