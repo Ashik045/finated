@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import Newsletter from '../../components/Newsletter/Newsletter'
@@ -70,6 +71,13 @@ const articleDetail = () => {
             {article.desc3?.map((des, index) => {
                 return <p key={index}>{des}</p>
             })}
+
+            <hr style={{marginTop: '50px'}} />
+                <div className={style.share_sec}>
+                    <h3>Share this article:</h3>
+                    <p><FaFacebook className={style.share_icon} /> <FaTwitter className={style.share_icon}/> <FaInstagram className={style.share_icon}/> <FaLinkedin className={style.share_icon}/> </p>
+                </div>
+            <hr />
 
         </div>
 

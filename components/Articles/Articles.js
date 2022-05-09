@@ -16,8 +16,8 @@ const Articles = ({articleDetail, articleDetai2}) => {
                 <div className={style.articles_main_right}>
                     {articleDetai2?.map((detail) => {
                         return (
-                            <>
-                            <div key={detail.id} className={style.articles_main_right_blog}>
+                            <div key={detail.id}>
+                            <div  className={style.articles_main_right_blog}>
                                 <h4><span style={{color: 'rgb(114, 112, 112)', marginRight: '5px'}}>By </span> {detail.author}</h4>
                                 <Link href="/articleDetail">
                                     <h2>{detail.title}</h2>
@@ -30,7 +30,7 @@ const Articles = ({articleDetail, articleDetai2}) => {
                             </div>
                             {detail.hr && <hr style={{color: 'rgb(230, 227, 227)'}} />}
                         
-                        </>
+                        </div>
                         )
                     })}
                 </div>

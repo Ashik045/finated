@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { FaCheck, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa'
+import ContactForm from '../../components/ContactForm/ContactForm'
 import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import Newsletter from '../../components/Newsletter/Newsletter'
@@ -144,7 +145,7 @@ const candidateDetail = () => {
                     <h2>Contact</h2>
                     <div className={style.right_tags_btm}></div>
                     <div className={style.right_tags_btns}>
-                        <h1>contact form</h1>
+                        <ContactForm />
                     </div>
                 </div>
             </div>

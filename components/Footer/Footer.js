@@ -7,76 +7,92 @@ import style from './footer.module.scss'
 const footer_detail1 = [
     {
       id: 1,
-      link: 'Star a Trial'
+      link: 'Star a Trial',
+      to: '/404'
     },
     {
       id: 2,
-      link: 'How It Works'
+      link: 'How It Works',
+      to: '/404'
     },
     {
       id: 3,
-      link: 'Features'
+      link: 'Features',
+      to: '/jobs'
     },
     {
       id: 4,
-      link: 'Price & Planing'
+      link: 'Price & Planing',
+      to: '/404'
     },
 ]
 
 const footer_detail2 = [
   {
     id: 1,
-    link: 'Affiliate'
+    link: 'Affiliate',
+    to: '/404'
   },
   {
     id: 2,
-    link: 'Blog'
+    link: 'Blog',
+    to: '/article'
   },
   {
     id: 3,
-    link: 'Help & Support'
+    link: 'contact',
+    to: '/contact'
   },
   {
     id: 4,
-    link: 'Careers'
+    link: 'Careers',
+    to: '/article'
   },
 ]
 
 const footer_detail3 = [
   {
     id: 1,
-    link: 'Quick Links'
+    link: 'Quick Links',
+    to: '/404'
   },
   {
     id: 2,
-    link: 'Job Packages'
+    link: 'Job Packages',
+    to: '/jobs'
   },
   {
     id: 3,
-    link: 'Post New Job'
+    link: 'Post New Job',
+    to: '/jobs'
   },
   {
     id: 4,
-    link: 'Jobs Listing'
+    link: 'Jobs Listing',
+    to: '/jobs'
   },
 ]
 
 const footer_detail4 = [
   {
     id: 1,
-    link: 'About Us'
+    link: 'About Us',
+    to: '/contact'
   },
   {
     id: 2,
-    link: 'Contact With Us'
+    link: 'Contact With Us',
+    to: '/contact'
   },
   {
     id: 3,
-    link: 'Our Partners'
+    link: 'Our Partners',
+    to: '/candidate'
   },
   {
     id: 4,
-    link: 'Careers'
+    link: 'Careers',
+    to: '/404'
   },
 ]
 
