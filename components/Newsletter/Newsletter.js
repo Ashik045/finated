@@ -23,7 +23,7 @@ const Newsletter = () => {
         try {
             Toast.fire({
                 icon: 'success',
-                title: 'Subscribe in successfully'
+                title: 'Subscribed successfully'
               })
         } catch (error) {
             console.log(error);
